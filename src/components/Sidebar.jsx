@@ -1,5 +1,4 @@
 import { BracesIcon, CloseIcon } from './icons'
-import { FileUploader } from './FileUploader'
 import { FileInfo } from './FileInfo'
 import { RecordSearch } from './RecordSearch'
 import { RecordList } from './RecordList'
@@ -17,7 +16,6 @@ export function Sidebar({
   filteredIndices,
   selectedRecordIndex,
   onSelectRecord,
-  onFileSelected,
 }) {
   return (
     <aside className={`sidebar${isOpen ? ' open' : ''}`}>
@@ -36,10 +34,11 @@ export function Sidebar({
         </button>
       </div>
 
-      <div className="sidebar-section">
-        <FileUploader onFileSelected={onFileSelected} />
-        {loadError && <div className="load-error">{loadError}</div>}
-      </div>
+      {loadError && (
+        <div className="sidebar-section">
+          <div className="load-error">{loadError}</div>
+        </div>
+      )}
 
       {uploadedFile && (
         <div className="sidebar-section">
