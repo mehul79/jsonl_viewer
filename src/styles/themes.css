@@ -1,0 +1,35 @@
+html:not([data-theme]) {
+  color-scheme: light dark;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+}
+
+::selection {
+  background: var(--bg-selected);
+}
+
+* {
+  scrollbar-color: var(--border-strong) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--bg-app);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

@@ -1,0 +1,66 @@
+:root {
+  --sans: -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --sidebar-width: 320px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+
+  --font-size-sm: 12.5px;
+  --font-size-base: 13.5px;
+  --font-size-code: 13px;
+
+  --line-height-code: 21px;
+}
+
+[data-theme='dark'] {
+  --bg-app: #0a0a0b;
+  --bg-sidebar: #111113;
+  --bg-surface: #17171a;
+  --bg-surface-hover: #1c1c20;
+  --bg-selected: #1f1f24;
+  --bg-input: #17171a;
+  --border: #27272b;
+  --border-strong: #34343a;
+
+  --text-primary: #e9e9ec;
+  --text-secondary: #8b8b93;
+  --text-tertiary: #5c5c63;
+
+  --accent-selected-bar: #6b7280;
+  --success: #6ee7b7;
+
+  --syntax-key: #8ab4f8;
+  --syntax-string: #9ece8f;
+  --syntax-number: #e0af68;
+  --syntax-boolean: #c3a6f7;
+  --syntax-null: #f28b93;
+  --syntax-punct: #c7c7cd;
+  --syntax-line-number: #46464e;
+}
+
+[data-theme='light'] {
+  --bg-app: #ffffff;
+  --bg-sidebar: #fafafa;
+  --bg-surface: #f5f5f6;
+  --bg-surface-hover: #eeeeef;
+  --bg-selected: #ececee;
+  --bg-input: #ffffff;
+  --border: #e5e5e8;
+  --border-strong: #d4d4d8;
+
+  --text-primary: #0a0a0b;
+  --text-secondary: #6b6b70;
+  --text-tertiary: #9a9aa0;
+
+  --accent-selected-bar: #52525b;
+  --success: #15803d;
+
+  --syntax-key: #1d4ed8;
+  --syntax-string: #166534;
+  --syntax-number: #b45309;
+  --syntax-boolean: #7c3aed;
+  --syntax-null: #b91c1c;
+  --syntax-punct: #27272a;
+  --syntax-line-number: #c2c2c6;
+}
